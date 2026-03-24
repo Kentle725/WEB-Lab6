@@ -18,8 +18,8 @@ services:
     container_name: lab6_php
     volumes:
       - ./www:/var/www/html
-    ports:
-      - "8080:80"
+    expose:
+      - "9000"
     depends_on:
       - elasticsearch
     networks:
